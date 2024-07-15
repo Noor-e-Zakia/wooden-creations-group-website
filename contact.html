@@ -10,21 +10,39 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
-<body class="container p-0 ">
+<body style="background-color: rgb(218, 214, 214)">
 
     <header>
-        <div class="navbar">
-            <div class="ms-5 me-1 p-2 fs-4 fst-italic fw-bold text-warning-emphasis"> WOODEN CREATIONS ♡</div>
-            <div class="me-5">
-                <a href="#" class="p-2 ms-2 text-dark">Home</a>
-                <a href="#" class="p-2 ms-2 text-dark">About</a>
-                <a href="contact.html" class="p-2 mx-2 text-dark">Contact Us</a>
-                <a href="product.html" class="p-2 ms-2  text-dark">Product</a>
-                <input placeholder="Search products">
-                <button class="bg-warning">search</button>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(218, 214, 214)">
+          <div class="container-fluid mt-0">
+            <a class="navbar-brand ms-1  fs-2 fw-bold p-3 " href="#" style="color: #2b4f3a;">
+                <button class="me-2 navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                  </button>WOODEN CREATIONS♡</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="product.html">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link dark" href="about.html">About</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search products" aria-label="Search">
+                <button class="btn btn-warning" type="submit">Search</button>
+              </form>
             </div>
+          </div>
+        </nav>
     </header>
-    <div class="p-0">
+    <div class="p-0 container p-0 ">
         <h1 class="contact-heading p-3 text-center text-warning-emphasis">Contact Us</h1>
         <label for="name" class="form-label ">Name :</label>
         <input type="text" id="name" class="form-control mb-1 border border-dark" placeholder="Enter your name">

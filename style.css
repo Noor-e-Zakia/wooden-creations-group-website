@@ -1,20 +1,44 @@
-*{
-    background-color: #fcf1df;
+.container{
+    background-color: (218, 214, 214);
 }
 .contact-heading{
     font-family: 'Times New Roman', Times, serif;
 }
-.header{
-    background-color:  rgb(82,49,49);
-}
 
 header .navbar{
-    background-color: rgb(82,49,49);    
+    background-color:  rgb(82, 49, 49);
 }
-
 header .navbar a{
     text-decoration: none;
+
 }
+.product{
+    padding: 30px;
+}
+
+ .product-img{
+     border: 3px solid white;
+    opacity: 60%;
+}
+.product .centered{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+.product-button{
+    border: 2px solid green;
+    width: 200px;
+    margin-left: 20px;
+}
+
 
 footer ul li a{
     text-decoration: none;
@@ -30,5 +54,5 @@ footer{
  
 }
 footer .container{
-    border: 1px solid black;
+    border: 5px double black;
 } 

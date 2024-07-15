@@ -1,0 +1,1 @@
+alert("Accept all the Cookies");

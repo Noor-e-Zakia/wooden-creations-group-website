@@ -1,57 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wooden Creations ♡</title>
     <link rel="stylesheet" href="style.css">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body class="container p-0" style="background-color: beige;">
-    <header >
-        <div class="navbar">
-            <div class="ms-5 me-1 p-2 fs-4 fst-italic fw-bold text-warning-emphasis"> WOODEN CREATIONS ♡</div>
-            <div class="me-5">
-                <a href="#" class="p-2 ms-2 text-dark">Home</a>
-                <a href="#" class="p-2 ms-2 text-dark">About</a>
-                <a href="contact.html" class="p-2 mx-2 text-dark">Contact Us</a>
-                <a href="product.html" class="p-2 ms-2  text-dark">Product</a>
-                <input placeholder="Search products">
-                <button class="bg-warning">search</button>
+
+<body style="background-color: rgb(218, 214, 214)">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(218, 214, 214)">
+          <div class="container-fluid mt-0">
+            <a class="navbar-brand ms-1  fs-2 fw-bold p-3 " href="#" style="color: #2b4f3a;">
+                <button class="me-2 navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                  </button>WOODEN CREATIONS♡</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="product.html">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-dark" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link dark" href="about.html">About</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search products" aria-label="Search">
+                <button class="btn btn-warning" type="submit">Search</button>
+              </form>
             </div>
+          </div>
+        </nav>
     </header>
 
-    <div class="d-flex justify-content-around pt-5">
-    <div class="card" style="width: 15rem;">
-        <img src="images/chair.jpg" class="card-img-top">
-        <div class="card-body">
-            <h6 class="card-text"> Elegant wood table and chair bundle....</h6>
-            <p><s>Rs.15,000</s> Rs.10,000</p>
+    <div class="product container p-0">
+        <img src="images/main-image.jfif" class="product-img" width="100%" height="500px">
+        <div class="centered">
+            <h1 class="text-center">MODERN FURNITURE ♡</h1>
+            <h4 class="text-center">EMBRACE THE BEAUTY OF <br> MODERN FURNITURE</h4>
         </div>
     </div>
-    <div class="card" style="width: 15rem;">
-        <img src="images/chair.jpg" class="card-img-top">
-        <div class="card-body">
-            <h6 class="card-text"> Elegant wood table and chair bundle....</h6>
-            <p><s>Rs.15,000</s> Rs.10,000</p>
-        </div>
-    </div>
-    <div class="card" style="width: 15rem;">
-        <img src="images/chair.jpg" class="card-img-top">
-        <div class="card-body">
-            <h6 class="card-text"> Elegant wood table and chair bundle....</h6>
-            <p><s>Rs.15,000</s> Rs.10,000</p>
-        </div>
-    </div>
-    
-</div>
 
+    <div class="row d-flex justify-content-around p-5 pt-5 ">
+        <div class="col-md-4 col-sm-6 card" style="width: 17rem;">
+            <img src="images/chair.jpg" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-text"> Elegant wood table and chair bundle....</h6>
+                <p class="text-danger"><s>Rs.20,000</s><br>
+                </p>
+                <p>Rs.15,000</p>
+                <hr>
+                <h5>Brown</h5>
+                <hr>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordion-term-1" aria-expanded="true"
+                                aria-controls="accordion-term-1">Please Select</button>
+                        </h2>
+
+                        <div id="accordion-term-1" class="accordion-collapse collapse ">
+                            <div class="accordion-body">
+                                <div class="">
+                                    <p>Types of woods:</p>
+                                    <p> <input type="radio">Cherry</p>
+                                    <p> <input type="radio">Ash</p>
+                                    <p> <input type="radio">Walnut</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="product-button p-2 mt-3 "><strong>Add to cart...</strong></button>
+                </div>
+            </div>
+        </div>
+        <div class=" col-md-4 col-sm-6 card mt-2" style="width: 17rem;">
+            <img src="images/mirror.jfif" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-text"> Master piece of Mirror......</h6>
+                <p class="text-danger"><s>Rs.17,000</s><br>
+                </p>
+                <p>Rs.12,000</p>
+                <hr>
+                <h5>Red Oak</h5>
+                <hr>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordion-term-2" aria-expanded="true"
+                                aria-controls="accordion-term-2">Please Select</button>
+                        </h2>
+
+                        <div id="accordion-term-2" class="accordion-collapse collapse ">
+                            <div class="accordion-body">
+                                <div class="">
+                                    <p>Types of woods:</p>
+                                    <p> <input type="radio">Cherry</p>
+                                    <p> <input type="radio">Ash</p>
+                                    <p> <input type="radio">Walnut</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="product-button p-2 mt-3 "><strong>Add to cart...</strong></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 card mt-2" style="width: 17rem;">
+            <img src="images/table.jfif" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-text"> Elegant wood table ....</h6>
+                <p class="text-danger"><s>Rs.10,000</s><br>
+                </p>
+                <p>Rs.5,999</p>
+                <hr>
+                <h5>Beidge</h5>
+                <hr>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordion-term-3" aria-expanded="true"
+                                aria-controls="accordion-term-3">Please Select</button>
+                        </h2>
+
+                        <div id="accordion-term-3" class="accordion-collapse collapse ">
+                            <div class="accordion-body">
+                                <div class="">
+                                    <p>Types of woods:</p>
+                                    <p> <input type="radio">Cherry</p>
+                                    <p> <input type="radio">Ash</p>
+                                    <p> <input type="radio">Walnut</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="product-button p-2 mt-3 "><strong>Add to cart...</strong></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="row d-flex justify-content-around p-5 pt-5">
+        <div class="col-md-4 col-sm-6 card mt-2" style="width: 17rem;">
+            <img src="images/vase table.jfif" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-text"> Vase and article stand two in one......</h6>
+                <p class="text-danger"><s>Rs.10,000</s><br>
+                </p>
+                <p>Rs.5,999</p>
+                <hr>
+                <h5>Bisquie</h5>
+                <hr>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordion-term-4" aria-expanded="true"
+                                aria-controls="accordion-term-4">Please Select</button>
+                        </h2>
+
+                        <div id="accordion-term-4" class="accordion-collapse collapse ">
+                            <div class="accordion-body">
+                                <div class="">
+                                    <p>Types of woods:</p>
+                                    <p> <input type="radio">Cherry</p>
+                                    <p> <input type="radio">Ash</p>
+                                    <p> <input type="radio">Walnut</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="product-button p-2 mt-3 "><strong>Add to cart...</strong></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 card mt-2" style="width: 17rem;">
+            <img src="images/unique table.jfif" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-text"> Unique rounded table attached with wall......</h6>
+                <p class="text-danger"><s>Rs.15,000</s><br>
+                </p>
+                <p>Rs.10,099</p>
+                <hr>
+                <h5>White Oak</h5>
+                <hr>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordion-term-5" aria-expanded="true"
+                                aria-controls="accordion-term-5">Please Select</button>
+                        </h2>
+
+                        <div id="accordion-term-5" class="accordion-collapse collapse ">
+                            <div class="accordion-body">
+                                <div class="">
+                                    <p>Types of woods:</p>
+                                    <p> <input type="radio">Cherry</p>
+                                    <p> <input type="radio">Ash</p>
+                                    <p> <input type="radio">Walnut</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="product-button p-2 mt-3 "><strong>Add to cart...</strong></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 card mt-2" style="width: 17rem;">
+            <img src="images/book shelves.jfif" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-text"> Victorian Mahogany antique Book shelves ....</h6>
+                <p class="text-danger"><s>Rs.18,990</s><br>
+                </p>
+                <p>Rs.10,999</p>
+                <hr>
+                <h5>Choclate Brown</h5>
+                <hr>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordion-term-6" aria-expanded="true"
+                                aria-controls="accordion-term-6">Please Select</button>
+                        </h2>
+
+                        <div id="accordion-term-6" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <div class="">
+                                    <p>Types of woods:</p>
+                                    <p> <input type="radio">Cherry</p>
+                                    <p> <input type="radio">Ash</p>
+                                    <p> <input type="radio">Walnut</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="product-button p-2 mt-3 "><strong>Add to cart...</strong></button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="row d-flex justify-content-around p-5 pt-5">
+        <div class="col-md-4 col-sm-6 card mt-2" style="width: 17rem;">
+            <img src="images/planters.jpg" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-text"> Elegant wooden planters....</h6>
+                <p class="text-danger"><s>Rs.18,000</s><br>
+                </p>
+                <p>Rs.12,990</p>
+                <hr>
+                <h5>Italic Brown</h5>
+                <hr>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordion-term-7" aria-expanded="true"
+                                aria-controls="accordion-term-7">Please Select</button>
+                        </h2>
+
+                        <div id="accordion-term-7" class="accordion-collapse collapse ">
+                            <div class="accordion-body">
+                                <div class="">
+                                    <p>Types of woods:</p>
+                                    <p> <input type="radio">Cherry</p>
+                                    <p> <input type="radio">Ash</p>
+                                    <p> <input type="radio">Walnut</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="product-button p-2 mt-3 "><strong>Add to cart...</strong></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 card mt-2" style="width: 17rem;">
+            <img src="images/wall decore.jfif" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-text"> Master piece of Wall decoration......</h6>
+                <p class="text-danger"><s>Rs.18,000</s><br>
+                </p>
+                <p>Rs.10,000</p>
+                <hr>
+                <h5>Brown</h5>
+                <hr>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordion-term-8" aria-expanded="true"
+                                aria-controls="accordion-term-8">Please Select</button>
+                        </h2>
+
+                        <div id="accordion-term-8" class="accordion-collapse collapse ">
+                            <div class="accordion-body">
+                                <div class="">
+                                    <p>Types of woods:</p>
+                                    <p> <input type="radio">Cherry</p>
+                                    <p> <input type="radio">Ash</p>
+                                    <p> <input type="radio">Walnut</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="product-button p-2 mt-3 "><strong>Add to cart...</strong></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 card mt-2" style="width: 17rem;">
+            <img src="images/wood bud vase.jpg" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-text">Organic Style Wood Bud Vase Flower Vase..... </h6>
+                <p class="text-danger"><s>Rs.15,000</s><br>
+                </p>
+                <p>Rs.9,999</p>
+                <hr>
+                <h5>Beidge</h5>
+                <hr>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordion-term-9" aria-expanded="true"
+                                aria-controls="accordion-term-9">Please Select</button>
+                        </h2>
+
+                        <div id="accordion-term-9" class="accordion-collapse collapse ">
+                            <div class="accordion-body">
+                                <div class="">
+                                    <p>Types of woods:</p>
+                                    <p> <input type="radio">Cherry</p>
+                                    <p> <input type="radio">Ash</p>
+                                    <p> <input type="radio">Walnut</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="product-button p-2 mt-3 "><strong>Add to cart...</strong></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="row d-flex justify-content-around p-5 pt-5">
+        <div class="col-md-4 col-sm-6 card mt-2" style="width: 17rem;">
+            <img src="images/wall clock.jpg" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-text">Round wodden wall clock......</h6>
+                <p class="text-danger"><s>Rs.15,000</s><br>
+                </p>
+                <p>Rs.10,999</p>
+                <hr>
+                <h5>Bisquie</h5>
+                <hr>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordion-term-10" aria-expanded="true"
+                                aria-controls="accordion-term-10">Please Select</button>
+                        </h2>
+
+                        <div id="accordion-term-10" class="accordion-collapse collapse ">
+                            <div class="accordion-body">
+                                <div class="">
+                                    <p>Types of woods:</p>
+                                    <p> <input type="radio">Cherry</p>
+                                    <p> <input type="radio">Ash</p>
+                                    <p> <input type="radio">Walnut</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="product-button p-2 mt-3 "><strong>Add to cart...</strong></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 card mt-2" style="width: 17rem;">
+            <img src="images/teds wooodworking.jpg" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-text"> Teds wood working attached with wall......</h6>
+                <p class="text-danger"><s>Rs.10,000</s><br>
+                </p>
+                <p>Rs.7,099</p>
+                <hr>
+                <h5>White Oak</h5>
+                <hr>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordion-term-11" aria-expanded="true"
+                                aria-controls="accordion-term-11">Please Select</button>
+                        </h2>
+
+                        <div id="accordion-term-11" class="accordion-collapse collapse ">
+                            <div class="accordion-body">
+                                <div class="">
+                                    <p>Types of woods:</p>
+                                    <p> <input type="radio">Cherry</p>
+                                    <p> <input type="radio">Ash</p>
+                                    <p> <input type="radio">Walnut</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="product-button p-2 mt-3 "><strong>Add to cart...</strong></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 card mt-2" style="width: 17rem;">
+            <img src="images/epoxy round table.jpg" class="card-img-top">
+            <div class="card-body">
+                <h6 class="card-text"> Epoxy Round table ....</h6>
+                <p class="text-danger"><s>Rs.19,990</s><br>
+                </p>
+                <p>Rs.12,999</p>
+                <hr>
+                <h5>Walnut Brown</h5>
+                <hr>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#accordion-term-12" aria-expanded="true"
+                                aria-controls="accordion-term-12">Please Select</button>
+                        </h2>
+
+                        <div id="accordion-term-12" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <div class="">
+                                    <p>Types of woods:</p>
+                                    <p> <input type="radio">Cherry</p>
+                                    <p> <input type="radio">Ash</p>
+                                    <p> <input type="radio">Walnut</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="product-button p-2 mt-3 "><strong>Add to cart...</strong></button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div class="container mt-2 pt-2">
+            <ul class="footer-links ps-5 ms-5">
+                <h5>About Us</h5>
+                <li><a href="#" class="text-dark">About wooden</a></li>
+                <li><a href="#" class="text-dark">Careers</a></li>
+                <li><a href="#" class="text-dark">Global Sales</a></li>
+                <li><a href="#" class="text-dark">Sitemap</a></li>
+                <li><a href="#" class="text-dark">Supply chain</a></li>
+            </ul>
+            <ul class="footer-links ps-5 ms-5">
+                <h5>Wooden Creations</h5>
+                <li><a href="#" class="text-dark">My account</a></li>
+                <li><a href="#" class="text-dark">Order Status</a></li>
+                <li><a href="#" class="text-dark">Flash unlimited shipping</a></li>
+                <li><a href="#" class="text-dark">Subscribe now</a></li>
+                <li><a href="#" class="text-dark">Social impact</a></li>
+            </ul>
+            <ul class="footer-links ps-5 ms-5">
+                <h5>Help & FAQs</h5>
+                <li><a href="#" class="text-dark">Order Ordering</a></li>
+                <li><a href="#" class="text-dark">Shipping</a></li>
+                <li><a href="#" class="text-dark">Billing</a></li>
+                <li><a href="#" class="text-dark">Returns & Exchange</a></li>
+                <li><a href="#" class="text-dark">Contact us</a></li>
+            </ul>
+            <ul class="footer-links ps-5 ms-5">
+                <h5>Ways to shop</h5>
+                <li><a href="#" class="text-dark">Best sellers</a></li>
+                <li><a href="#" class="text-dark">Just arrived</a></li>
+                <li><a href="#" class="text-dark">Store locations</a></li>
+                <li><a href="#" class="text-dark">Gift cards</a></li>
+                <li><a href="#" class="text-dark">Events</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+    <script src="index.js"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
